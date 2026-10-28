@@ -1,0 +1,108 @@
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(24px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes crecer {
+    from {
+        opacity: 0;
+        transform: scale(0.85);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes flotar {
+    0%,
+    100% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+    50% {
+        transform: translate(12px, -18px) rotate(8deg);
+    }
+}
+
+.hero_descrip {
+    animation: aparecer 0.7s ease-out 0.1s both;
+}
+
+.hero_cons {
+    animation: aparecer 0.7s ease-out 0.25s both;
+}
+
+.hero_titulo {
+    animation: crecer 0.9s cubic-bezier(0.2, 0.8, 0.2, 1) 0.4s both;
+}
+
+.hero_afirm {
+    animation: aparecer 0.7s ease-out 0.7s both;
+}
+
+.hero_botones {
+    animation: aparecer 0.7s ease-out 0.9s both;
+}
+
+.blob1 {
+    animation: flotar 14s ease-in-out infinite;
+}
+
+.blob2 {
+    animation: flotar 10s ease-in-out -3s infinite;
+}
+
+.blob3 {
+    animation: flotar 12s ease-in-out -6s infinite reverse;
+}
+
+.blob4 {
+    animation: flotar 16s ease-in-out -2s infinite reverse;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .hero_descrip,
+    .hero_cons,
+    .hero_titulo,
+    .hero_afirm,
+    .hero_botones,
+    .blob1,
+    .blob2,
+    .blob3,
+    .blob4,
+    .fav_check:checked + .fav svg,
+    .principio:hover .principio_icono {
+        animation: none;
+    }
+}
+
+@keyframes latido {
+    0% {
+        transform: scale(1);
+    }
+    40% {
+        transform: scale(1.4);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes balanceo {
+    0%,
+    100% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-12deg);
+    }
+    75% {
+        transform: rotate(12deg);
+    }
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | EcoMarket</title>
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body class="pagina-contacto">
+    <header>
+        <a href="../index.html" class="logo">
+            <img src="../img/icons/logo-color.jpg" alt="EcoMarket, inicio"></a>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="sobre-nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html" aria-current="page">Contacto</a></li>
+                <li><a href="productos.html#buscar">Buscar</a></li>
+                <li><a href="carrito.html"><img src="../img/icons/bolsa_verde.png" alt="Carrito"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contacto">
+        <div class="contacto_cabecera">
+            <h1 class="contacto_titulo">Habla con nosotros</h1>
+            <p>Cuéntanos tu duda y te respondemos en menos de 24 horas.</p>
+        </div>
+
+        <ul class="contacto_datos">
+            <li class="contacto_dato">
+                <span class="contacto_icono" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>
+                <h2>Escríbenos</h2>
+                <a href="mailto:ecomarket@gmail.com">ecomarket@gmail.com</a>
+            </li>
+            <li class="contacto_dato">
+                <span class="contacto_icono" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg></span>
+                <h2>Llámanos</h2>
+                <a href="tel:+573227113057">+57 322 711 3057</a>
+            </li>
+            <li class="contacto_dato">
+                <span class="contacto_icono" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+                <h2>Horario</h2>
+                <p>Lun a Sáb, 8 am – 6 pm</p>
+            </li>
+        </ul>
+
+        <div class="contacto_cuerpo">
+            <form class="formulario" action="#" method="post">
+                <span class="formulario_etiqueta">Formulario</span>
+
+                <label class="campo">
+                    <span>Nombre</span>
+                    <input type="text" name="nombre" placeholder=" " required minlength="2" autocomplete="name">
+                    <small class="campo_error">Escribe tu nombre (mínimo 2 letras).</small>
+                </label>
+
+                <label class="campo">
+                    <span>Correo</span>
+                    <input type="email" name="correo" placeholder=" " required autocomplete="email">
+                    <small class="campo_error">Escribe un correo válido, como nombre@correo.com.</small>
+                </label>
+
+                <label class="campo">
+                    <span>Número telefónico</span>
+                    <input type="tel" name="telefono" placeholder=" " required pattern="[0-9 +]{7,15}" autocomplete="tel">
+                    <small class="campo_error">Usa solo números, entre 7 y 15 dígitos.</small>
+                </label>
+
+                <label class="campo">
+                    <span>Mensaje</span>
+                    <textarea name="mensaje" rows="4" placeholder=" " required minlength="10"></textarea>
+                    <small class="campo_error">Cuéntanos un poco más (mínimo 10 caracteres).</small>
+                </label>
+
+                <button type="submit" class="boton-formulario">Enviar mensaje <span aria-hidden="true">→</span></button>
+            </form>
+
+            <aside class="contacto_lado" aria-label="Ubicación y redes">
+                <a class="mapa" href="https://www.google.com/maps" target="_blank" rel="noopener">
+                    <img src="../img/mapa/mapa.png" alt="Mapa con la ubicación de EcoMarket">
+                    <span class="mapa_texto">Ver en Google Maps</span>
+                </a>
+                <div class="contacto_redes">
+                    <p>Síguenos en</p>
+                    <ul>
+                        <li><a href="#"><img src="../img/contacto/instagram.svg" alt="Instagram"></a></li>
+                        <li><a href="#"><img src="../img/contacto/facebook.svg" alt="Facebook"></a></li>
+                        <li><a href="#"><img src="../img/contacto/tiktok.svg" alt="TikTok"></a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer_marca">
+            <a href="../index.html" class="footer_logo">
+                <img src="../img/icons/logo-claro.jpg" alt="EcoMarket, inicio">
+            </a>
+            <p class="footer_titulo">Compra responsable, vive sostenible</p>
+        </div>
+
+        <div class="footer_redes">
+            <p>Síguenos en</p>
+            <ul>
+                <li><a href="#"><img src="../img/icons/instagram.jpg" alt="Instagram"></a></li>
+                <li><a href="#"><img src="../img/icons/facebook.jpg" alt="Facebook"></a></li>
+                <li><a href="#"><img src="../img/icons/tiktok.jpg" alt="TikTok"></a></li>
+            </ul>
+        </div>
+
+        <div class="footer_contacto">
+            <a href="mailto:ecomarket@gmail.com">ecomarket@gmail.com</a>
+            <ul>
+                <li><a href="#">Términos</a></li>
+                <li><a href="#">Privacidad</a></li>
+            </ul>
+        </div>
+
+        <p class="footer_derechos">© 2026 EcoMarket</p>
+    </footer>
+</body>
+</html>

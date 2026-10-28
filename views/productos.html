@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos | EcoMarket</title>
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body class="pagina-productos">
+    <header>
+        <a href="../index.html" class="logo">
+            <img src="../img/icons/logo-color.jpg" alt="EcoMarket, inicio"></a>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="productos.html" aria-current="page">Productos</a></li>
+                <li><a href="sobre-nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="#buscar">Buscar</a></li>
+                <li><a href="carrito.html"><img src="../img/icons/bolsa_verde.png" alt="Carrito"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="catalogo">
+        <div class="catalogo_cabecera" id="buscar">
+            <h1 class="catalogo_titulo">Productos</h1>
+            <form class="buscador" role="search" action="productos.html">
+                <label class="sr-only" for="q">Buscar productos</label>
+                <input type="search" id="q" name="q" placeholder="Buscar productos…">
+            </form>
+        </div>
+
+        <div class="catalogo_cuerpo">
+            <aside class="filtros" aria-label="Filtros de productos">
+                <form action="productos.html">
+                    <fieldset>
+                        <legend>Categorías</legend>
+                        <label class="opcion"><input type="checkbox" name="categoria" value="hogar"> Hogar</label>
+                        <label class="opcion"><input type="checkbox" name="categoria" value="moda"> Moda</label>
+                        <label class="opcion"><input type="checkbox" name="categoria" value="cuidado-personal"> Cuidado personal</label>
+                        <label class="opcion"><input type="checkbox" name="categoria" value="alimentos"> Alimentos</label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Precio</legend>
+                        <input type="range" name="precio" min="0" max="100000" step="1000" value="60000" aria-label="Precio máximo">
+                        <div class="filtros_rango"><span>$0</span><span>$100.000</span></div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Disponibilidad</legend>
+                        <label class="opcion"><input type="checkbox" id="solo-stock" name="stock" value="1"> Solo en stock</label>
+                    </fieldset>
+                </form>
+            </aside>
+
+            <section aria-label="Catálogo de productos">
+                <ul class="productos_grid">
+                <li class="productos_item">
+                    <article class="producto">
+                        <div class="producto_foto">
+                            <img src="../img/productos/kit-vida-sostenible.jpg" alt="Kit de inicio con productos reutilizables" loading="lazy">
+                        </div>
+                        <div class="producto_info">
+                            <h2 class="producto_nombre">Kit de inicio Vida Sostenible</h2>
+                            <span class="stock stock--ok">En stock</span>
+                        </div>
+                        <p class="producto_precio">$60.500</p>
+                        <div class="producto_acciones">
+                            <a href="carrito.html" class="boton-carrito">Agregar al carrito</a>
+                            <input type="checkbox" id="fav-01" class="fav_check">
+                            <label for="fav-01" class="fav" aria-label="Favorito: Kit de inicio Vida Sostenible"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></label>
+                        </div>
+                    </article>
+                </li>
+                <li class="productos_item">
+                    <article class="producto">
+                        <div class="producto_foto">
+                            <img src="../img/productos/bolsa-shampoo-jabon.jpg" alt="Bolsa de tela para guardar shampoo y jabón en barra" loading="lazy">
+                        </div>
+                        <div class="producto_info">
+                            <h2 class="producto_nombre">Bolsa para Shampoo/Jabón</h2>
+                            <span class="stock stock--ok">En stock</span>
+                        </div>
+                        <p class="producto_precio">$8.000</p>
+                        <div class="producto_acciones">
+                            <a href="carrito.html" class="boton-carrito">Agregar al carrito</a>
+                            <input type="checkbox" id="fav-02" class="fav_check">
+                            <label for="fav-02" class="fav" aria-label="Favorito: Bolsa para Shampoo/Jabón"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></label>
+                        </div>
+                    </article>
+                </li>
+                <li class="productos_item">
+                    <article class="producto">
+                        <div class="producto_foto">
+                            <img src="../img/productos/pitillo-comprimible.jpg" alt="Pitillo metálico comprimible y reutilizable" loading="lazy">
+                        </div>
+                        <div class="producto_info">
+                            <h2 class="producto_nombre">Pitillo comprimible</h2>
+                            <span class="stock stock--ok">En stock</span>
+                        </div>
+                        <p class="producto_precio">$22.900</p>
+                        <div class="producto_acciones">
+                            <a href="carrito.html" class="boton-carrito">Agregar al carrito</a>
+                            <input type="checkbox" id="fav-03" class="fav_check">
+                            <label for="fav-03" class="fav" aria-label="Favorito: Pitillo comprimible"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></label>
+                        </div>
+                    </article>
+                </li>
+                <li class="productos_item">
+                    <article class="producto">
+                        <div class="producto_foto">
+                            <img src="../img/productos/shampoo-barra.jpg" alt="Persona sosteniendo dos barras de shampoo sólido" loading="lazy">
+                        </div>
+                        <div class="producto_info">
+                            <h2 class="producto_nombre">Shampoo en barra</h2>
+                            <span class="stock stock--ok">En stock</span>
+                        </div>
+                        <p class="producto_precio">$30.900</p>
+                        <div class="producto_acciones">
+                            <a href="carrito.html" class="boton-carrito">Agregar al carrito</a>
+                            <input type="checkbox" id="fav-04" class="fav_check">
+                            <label for="fav-04" class="fav" aria-label="Favorito: Shampoo en barra"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></label>
+                        </div>
+                    </article>
+                </li>
+                <li class="productos_item">
+                    <article class="producto producto--agotado">
+                        <div class="producto_foto">
+                            <img src="../img/productos/cepillo-nino.jpg" alt="Cepillos de dientes de bambú para niños en colores" loading="lazy">
+                        </div>
+                        <div class="producto_info">
+                            <h2 class="producto_nombre">Cepillo de dientes de niño</h2>
+                            <span class="stock stock--agotado">Agotado</span>
+                        </div>
+                        <p class="producto_precio">$11.000</p>
+                        <div class="producto_acciones">
+                            <span class="boton-carrito boton-carrito--agotado" aria-disabled="true">No disponible</span>
+                            <input type="checkbox" id="fav-05" class="fav_check">
+                            <label for="fav-05" class="fav" aria-label="Favorito: Cepillo de dientes de niño"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></label>
+                        </div>
+                    </article>
+                </li>
+                <li class="productos_item">
+                    <article class="producto">
+                        <div class="producto_foto">
+                            <img src="../img/productos/combo-afeitar.jpg" alt="Máquina de afeitar metálica y jabón de afeitar" loading="lazy">
+                        </div>
+                        <div class="producto_info">
+                            <h2 class="producto_nombre">Combo máquina + jabón de afeitar</h2>
+                            <span class="stock stock--ok">En stock</span>
+                        </div>
+                        <p class="producto_precio">$47.900</p>
+                        <div class="producto_acciones">
+                            <a href="carrito.html" class="boton-carrito">Agregar al carrito</a>
+                            <input type="checkbox" id="fav-06" class="fav_check">
+                            <label for="fav-06" class="fav" aria-label="Favorito: Combo máquina + jabón de afeitar"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></label>
+                        </div>
+                    </article>
+                </li>
+                <li class="productos_item">
+                    <article class="producto">
+                        <div class="producto_foto">
+                            <img src="../img/productos/soporte-cepillo-bambu.jpg" alt="Soporte de bambú con un cepillo de dientes" loading="lazy">
+                        </div>
+                        <div class="producto_info">
+                            <h2 class="producto_nombre">Soporte para cepillo de dientes</h2>
+                            <span class="stock stock--ok">En stock</span>
+                        </div>
+                        <p class="producto_precio">$18.900</p>
+                        <div class="producto_acciones">
+                            <a href="carrito.html" class="boton-carrito">Agregar al carrito</a>
+                            <input type="checkbox" id="fav-07" class="fav_check">
+                            <label for="fav-07" class="fav" aria-label="Favorito: Soporte para cepillo de dientes"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></label>
+                        </div>
+                    </article>
+                </li>
+                <li class="productos_item">
+                    <article class="producto">
+                        <div class="producto_foto">
+                            <img src="../img/productos/jabon-exfoliante-cafe-canela.jpg" alt="Jabón exfoliante natural de café y canela con su caja" loading="lazy">
+                        </div>
+                        <div class="producto_info">
+                            <h2 class="producto_nombre">Jabón exfoliante de café y canela</h2>
+                            <span class="stock stock--ok">En stock</span>
+                        </div>
+                        <p class="producto_precio">$16.900</p>
+                        <div class="producto_acciones">
+                            <a href="carrito.html" class="boton-carrito">Agregar al carrito</a>
+                            <input type="checkbox" id="fav-08" class="fav_check">
+                            <label for="fav-08" class="fav" aria-label="Favorito: Jabón exfoliante de café y canela"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></label>
+                        </div>
+                    </article>
+                </li>
+                <li class="productos_item">
+                    <article class="producto">
+                        <div class="producto_foto">
+                            <img src="../img/productos/jabon-corporal-menta.jpg" alt="Barra de jabón orgánico de menta" loading="lazy">
+                        </div>
+                        <div class="producto_info">
+                            <h2 class="producto_nombre">Jabón corporal de menta</h2>
+                            <span class="stock stock--ok">En stock</span>
+                        </div>
+                        <p class="producto_precio">$14.500</p>
+                        <div class="producto_acciones">
+                            <a href="carrito.html" class="boton-carrito">Agregar al carrito</a>
+                            <input type="checkbox" id="fav-09" class="fav_check">
+                            <label for="fav-09" class="fav" aria-label="Favorito: Jabón corporal de menta"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></label>
+                        </div>
+                    </article>
+                </li>
+                <li class="productos_item">
+                    <article class="producto">
+                        <div class="producto_foto">
+                            <img src="../img/productos/bolsa-reutilizable-clip.jpg" alt="Bolsa reutilizable verde plegable con estampado" loading="lazy">
+                        </div>
+                        <div class="producto_info">
+                            <h2 class="producto_nombre">Bolsa reutilizable Clip</h2>
+                            <span class="stock stock--ok">En stock</span>
+                        </div>
+                        <p class="producto_precio">$26.900</p>
+                        <div class="producto_acciones">
+                            <a href="carrito.html" class="boton-carrito">Agregar al carrito</a>
+                            <input type="checkbox" id="fav-10" class="fav_check">
+                            <label for="fav-10" class="fav" aria-label="Favorito: Bolsa reutilizable Clip"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></label>
+                        </div>
+                    </article>
+                </li>
+                <li class="productos_item">
+                    <article class="producto">
+                        <div class="producto_foto">
+                            <img src="../img/productos/cepillo-cabello-bambu.jpg" alt="Mano sosteniendo un cepillo de cabello de bambú" loading="lazy">
+                        </div>
+                        <div class="producto_info">
+                            <h2 class="producto_nombre">Cepillo de cabello de bambú</h2>
+                            <span class="stock stock--ok">En stock</span>
+                        </div>
+                        <p class="producto_precio">$24.900</p>
+                        <div class="producto_acciones">
+                            <a href="carrito.html" class="boton-carrito">Agregar al carrito</a>
+                            <input type="checkbox" id="fav-11" class="fav_check">
+                            <label for="fav-11" class="fav" aria-label="Favorito: Cepillo de cabello de bambú"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></label>
+                        </div>
+                    </article>
+                </li>
+                <li class="productos_item">
+                    <article class="producto producto--agotado">
+                        <div class="producto_foto">
+                            <img src="../img/productos/toallas-de-tela.jpg" alt="Tres toallas higiénicas de tela reutilizables con estampados" loading="lazy">
+                        </div>
+                        <div class="producto_info">
+                            <h2 class="producto_nombre">Toallas de tela (set x3)</h2>
+                            <span class="stock stock--agotado">Agotado</span>
+                        </div>
+                        <p class="producto_precio">$42.000</p>
+                        <div class="producto_acciones">
+                            <span class="boton-carrito boton-carrito--agotado" aria-disabled="true">No disponible</span>
+                            <input type="checkbox" id="fav-12" class="fav_check">
+                            <label for="fav-12" class="fav" aria-label="Favorito: Toallas de tela (set x3)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></label>
+                        </div>
+                    </article>
+                </li>
+                <li class="productos_item">
+                    <article class="producto">
+                        <div class="producto_foto">
+                            <img src="../img/productos/bolsa-tejida.jpg" alt="Bolsas de red tejidas de algodón reutilizables" loading="lazy">
+                        </div>
+                        <div class="producto_info">
+                            <h2 class="producto_nombre">Bolsa tejida de red</h2>
+                            <span class="stock stock--ok">En stock</span>
+                        </div>
+                        <p class="producto_precio">$19.900</p>
+                        <div class="producto_acciones">
+                            <a href="carrito.html" class="boton-carrito">Agregar al carrito</a>
+                            <input type="checkbox" id="fav-13" class="fav_check">
+                            <label for="fav-13" class="fav" aria-label="Favorito: Bolsa tejida de red"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></label>
+                        </div>
+                    </article>
+                </li>
+                <li class="productos_item">
+                    <article class="producto">
+                        <div class="producto_foto">
+                            <img src="../img/productos/kit-cubiertos-bambu.jpg" alt="Kit de cubiertos de bambú en estuches de tela" loading="lazy">
+                        </div>
+                        <div class="producto_info">
+                            <h2 class="producto_nombre">Kit de cubiertos de bambú x6</h2>
+                            <span class="stock stock--ok">En stock</span>
+                        </div>
+                        <p class="producto_precio">$34.900</p>
+                        <div class="producto_acciones">
+                            <a href="carrito.html" class="boton-carrito">Agregar al carrito</a>
+                            <input type="checkbox" id="fav-14" class="fav_check">
+                            <label for="fav-14" class="fav" aria-label="Favorito: Kit de cubiertos de bambú x6"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></label>
+                        </div>
+                    </article>
+                </li>
+                <li class="productos_item">
+                    <article class="producto">
+                        <div class="producto_foto">
+                            <img src="../img/productos/vaso-plegable.jpg" alt="Vasos plegables de silicona en varios colores" loading="lazy">
+                        </div>
+                        <div class="producto_info">
+                            <h2 class="producto_nombre">Vaso plegable</h2>
+                            <span class="stock stock--ok">En stock</span>
+                        </div>
+                        <p class="producto_precio">$27.900</p>
+                        <div class="producto_acciones">
+                            <a href="carrito.html" class="boton-carrito">Agregar al carrito</a>
+                            <input type="checkbox" id="fav-15" class="fav_check">
+                            <label for="fav-15" class="fav" aria-label="Favorito: Vaso plegable"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></label>
+                        </div>
+                    </article>
+                </li>
+                <li class="productos_item">
+                    <article class="producto">
+                        <div class="producto_foto">
+                            <img src="../img/productos/jabon-afeitar.jpg" alt="Jabón de afeitar natural con su caja" loading="lazy">
+                        </div>
+                        <div class="producto_info">
+                            <h2 class="producto_nombre">Jabón de afeitar</h2>
+                            <span class="stock stock--ok">En stock</span>
+                        </div>
+                        <p class="producto_precio">$15.900</p>
+                        <div class="producto_acciones">
+                            <a href="carrito.html" class="boton-carrito">Agregar al carrito</a>
+                            <input type="checkbox" id="fav-16" class="fav_check">
+                            <label for="fav-16" class="fav" aria-label="Favorito: Jabón de afeitar"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></label>
+                        </div>
+                    </article>
+                </li>
+                <li class="productos_item">
+                    <article class="producto">
+                        <div class="producto_foto">
+                            <img src="../img/productos/desodorante-barra.jpg" alt="Desodorante natural en barra con su caja" loading="lazy">
+                        </div>
+                        <div class="producto_info">
+                            <h2 class="producto_nombre">Desodorante en barra</h2>
+                            <span class="stock stock--ok">En stock</span>
+                        </div>
+                        <p class="producto_precio">$21.900</p>
+                        <div class="producto_acciones">
+                            <a href="carrito.html" class="boton-carrito">Agregar al carrito</a>
+                            <input type="checkbox" id="fav-17" class="fav_check">
+                            <label for="fav-17" class="fav" aria-label="Favorito: Desodorante en barra"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></label>
+                        </div>
+                    </article>
+                </li>
+                <li class="productos_item">
+                    <article class="producto">
+                        <div class="producto_foto">
+                            <img src="../img/productos/copitos-bambu.jpg" alt="Caja de cartón con copitos de bambú" loading="lazy">
+                        </div>
+                        <div class="producto_info">
+                            <h2 class="producto_nombre">Copitos de bambú</h2>
+                            <span class="stock stock--ok">En stock</span>
+                        </div>
+                        <p class="producto_precio">$9.900</p>
+                        <div class="producto_acciones">
+                            <a href="carrito.html" class="boton-carrito">Agregar al carrito</a>
+                            <input type="checkbox" id="fav-18" class="fav_check">
+                            <label for="fav-18" class="fav" aria-label="Favorito: Copitos de bambú"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></label>
+                        </div>
+                    </article>
+                </li>
+                <li class="productos_item">
+                    <article class="producto">
+                        <div class="producto_foto">
+                            <img src="../img/productos/combo-cepillo-estuche-bambu.jpg" alt="Cepillo de dientes de bambú junto a su estuche" loading="lazy">
+                        </div>
+                        <div class="producto_info">
+                            <h2 class="producto_nombre">Combo cepillo y estuche de bambú</h2>
+                            <span class="stock stock--ok">En stock</span>
+                        </div>
+                        <p class="producto_precio">$19.900</p>
+                        <div class="producto_acciones">
+                            <a href="carrito.html" class="boton-carrito">Agregar al carrito</a>
+                            <input type="checkbox" id="fav-19" class="fav_check">
+                            <label for="fav-19" class="fav" aria-label="Favorito: Combo cepillo y estuche de bambú"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></label>
+                        </div>
+                    </article>
+                </li>
+                <li class="productos_item">
+                    <article class="producto producto--agotado">
+                        <div class="producto_foto">
+                            <img src="../img/productos/acondicionador-solido.jpg" alt="Acondicionador sólido verde con su caja" loading="lazy">
+                        </div>
+                        <div class="producto_info">
+                            <h2 class="producto_nombre">Acondicionador sólido</h2>
+                            <span class="stock stock--agotado">Agotado</span>
+                        </div>
+                        <p class="producto_precio">$28.500</p>
+                        <div class="producto_acciones">
+                            <span class="boton-carrito boton-carrito--agotado" aria-disabled="true">No disponible</span>
+                            <input type="checkbox" id="fav-20" class="fav_check">
+                            <label for="fav-20" class="fav" aria-label="Favorito: Acondicionador sólido"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></label>
+                        </div>
+                    </article>
+                </li>
+                </ul>
+
+                <nav class="paginacion" aria-label="Paginación">
+                    <ul>
+                        <li><a href="#" aria-disabled="true">Anterior</a></li>
+                        <li><a href="#" aria-current="page">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">Siguiente</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer_marca">
+            <a href="../index.html" class="footer_logo">
+                <img src="../img/icons/logo-claro.jpg" alt="EcoMarket, inicio">
+            </a>
+            <p class="footer_titulo">Compra responsable, vive sostenible</p>
+        </div>
+
+        <div class="footer_redes">
+            <p>Síguenos en</p>
+            <ul>
+                <li><a href="#"><img src="../img/icons/instagram.jpg" alt="Instagram"></a></li>
+                <li><a href="#"><img src="../img/icons/facebook.jpg" alt="Facebook"></a></li>
+                <li><a href="#"><img src="../img/icons/tiktok.jpg" alt="TikTok"></a></li>
+            </ul>
+        </div>
+
+        <div class="footer_contacto">
+            <a href="mailto:ecomarket@gmail.com">ecomarket@gmail.com</a>
+            <ul>
+                <li><a href="#">Términos</a></li>
+                <li><a href="#">Privacidad</a></li>
+            </ul>
+        </div>
+
+        <p class="footer_derechos">© 2026 EcoMarket</p>
+    </footer>
+</body>
+</html>
