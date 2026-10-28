@@ -13,6 +13,7 @@
         color var(--transicion), border-color var(--transicion), box-shadow var(--transicion);
 }
 
+
 .boton-verde {
     background: var(--c-verde);
 }
@@ -36,6 +37,8 @@
     transform: translateY(-3px);
     box-shadow: 0 10px 22px rgba(0, 0, 0, 0.3);
 }
+
+
 
 .tarjeta {
     display: flex;
@@ -903,4 +906,23 @@
 .contacto_redes a:hover img,
 .contacto_redes a:focus-visible img {
     transform: scale(1.2);
+}
+
+.oferta{
+    background-color: rgb(92, 182, 82);
+    width: 1000px;
+    
+}
+
+.oferta_titulo{
+    color: #136436;    
+    border-radius: 25%;
+    border-color: black;
+
+}
+
+.texto_oferta,
+.hora_oferta{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
 }
